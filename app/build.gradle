@@ -12,13 +12,23 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64' // 'x86', 'x86_64' may be added
+        }
         externalNativeBuild {
             cmake {
-                cppFlags "-std=c++11"
+                cppFlags "-frtti -fexceptions -Werror -fexceptions -std=c++11"
+                //abiFilters 'x86', 'x86_64', 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'mips', 'mips64'
             }
         }
     }
-
+    task ndkClean(type: Delete) {
+        // remove unused archs from build cache
+        delete fileTree('.externalNativeBuild') {
+            exclude defaultConfig.ndk.abiFilters.collect { '**/' + it }
+        }
+    }
+    tasks.findByPath(':clean').dependsOn ndkClean
     buildTypes {
         release {
             minifyEnabled false
@@ -28,7 +38,7 @@ android {
     externalNativeBuild {
         cmake {
             path "src/main/cpp/CMakeLists.txt"
-            version "3.10.2"
+
         }
     }
 }

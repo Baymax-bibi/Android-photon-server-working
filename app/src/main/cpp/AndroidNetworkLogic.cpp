@@ -2,7 +2,6 @@
 #include <android/log.h>
 
 #include "AndroidNetworkLogic.h"
-#include "../../../../../../../Users/erikking/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/jni.h"
 
 AndroidNetworkLogic::AndroidNetworkLogic(JNIEnv* env, jobject obj, jmethodID writeMethod, jmethodID stateUpdateMethod)
         : NetworkLogic(this)

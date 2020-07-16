@@ -16,9 +16,9 @@ public:
     virtual void debugReturn(int debugLevel, const ExitGames::Common::JString& str);
     virtual void stateUpdate(State newState);
 
-    virtual void run();
-//
-    virtual void setLastInput(Input newInput);
+//    virtual void run();
+////
+//    virtual void setLastInput(Input newInput);
 private:
     JNIEnv* mEnv;
     jobject mObj;
