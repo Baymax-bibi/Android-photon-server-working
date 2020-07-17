@@ -1,0 +1,14 @@
+﻿Build started 7/16/2020 3:20:01 AM.
+     1>Project "C:\Users\ErikI\Downloads\photon-androidndk-sdk_v4-1-16-3\Photon-AndroidNDK-Sdk_v4-1-16-3\Demos\demo_loadBalancing\android\demo_android_loadBalancing.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "obj\Win32\Debug\".
+       Build:
+         "\VisualGDB.exe" /build "C:\Users\ErikI\Downloads\photon-androidndk-sdk_v4-1-16-3\Photon-AndroidNDK-Sdk_v4-1-16-3\Demos\demo_loadBalancing\android\demo_android_loadBalancing.vcxproj" "/solution:C:\Users\ErikI\Downloads\photon-androidndk-sdk_v4-1-16-3\Photon-AndroidNDK-Sdk_v4-1-16-3\Demos\demo_loadBalancing\android\demo_android_loadBalancing.sln" "/config:Debug" "/platform:Win32"
+         '"\VisualGDB.exe"' is not recognized as an internal or external command,
+         operable program or batch file.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MakeFile.Targets(38,5): error MSB3073: The command ""\VisualGDB.exe" /build "C:\Users\ErikI\Downloads\photon-androidndk-sdk_v4-1-16-3\Photon-AndroidNDK-Sdk_v4-1-16-3\Demos\demo_loadBalancing\android\demo_android_loadBalancing.vcxproj" "/solution:C:\Users\ErikI\Downloads\photon-androidndk-sdk_v4-1-16-3\Photon-AndroidNDK-Sdk_v4-1-16-3\Demos\demo_loadBalancing\android\demo_android_loadBalancing.sln" "/config:Debug" "/platform:Win32"" exited with code 9009.
+     1>Done Building Project "C:\Users\ErikI\Downloads\photon-androidndk-sdk_v4-1-16-3\Photon-AndroidNDK-Sdk_v4-1-16-3\Demos\demo_loadBalancing\android\demo_android_loadBalancing.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.42
